@@ -1,11 +1,7 @@
-# `server`
+# After cloning
 
-> TODO: description
-
-## Usage
-
-```
-const server = require('server');
-
-// TODO: DEMONSTRATE API
-```
+- Check db configs at `config/db.js`.
+- If db doesn`t exist:
+  - create db respectively db config;
+  - create tables by sync (look at `models/index.js`).
+- Create `.env` file by `.env-example`.

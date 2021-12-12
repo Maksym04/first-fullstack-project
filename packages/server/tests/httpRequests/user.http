@@ -1,8 +1,20 @@
-GET http://localhost:5000/api/users HTTP/1.1
+GET http://localhost:5000/api/users? HTTP/1.1
 
 ###
 
-GET http://localhost:5000/api/users/1 HTTP/1.1
+GET http://localhost:5000/api/users?results=5 HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/users?page=1&results=5 HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/users?page=2&results=5 HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/users/4 HTTP/1.1
 
 ###
 
@@ -16,7 +28,7 @@ Content-Type: application/json
 {
   "firstName": "User",
   "lastName": "Userovich",
-  "email": "test2@test.test",
+  "email": "test5@test.test",
   "passwordHash": "qwerty",
   "gender": "male",
   "birthday": "2000-01-30"
